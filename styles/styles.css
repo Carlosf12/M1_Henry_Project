@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif; /* A common, readable sans-serif font */
+    line-height: 1.6; /* Improves readability of text */
+    margin: 20px; /* Basic margin around the page content */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 960px; /* Limit the width of the main content */
+    margin: 0 auto; /* Center the content on the page */
+    padding: 20px;
+    background-color: #fff; /* White background for the content area */
+    border-radius: 8px; /* Slightly rounded corners for the content area */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Light separator */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff; /* A common link color */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker link color on hover */
+}
+
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border around sections */
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+main section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #555;
+    border-bottom: 2px solid #007bff; /* Highlight section titles */
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #eee;
+}
