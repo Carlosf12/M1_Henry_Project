@@ -230,3 +230,104 @@ footer {
 footer p {
     margin: 0; /* Remove default paragraph margin */
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #181818; /* Dark charcoal background */
+    color: #f5f5f5; /* Off-white text */
+}
+
+.container.dark-mode {
+    background-color: #212121; /* Slightly lighter charcoal main background */
+    color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05); /* Subtle light shadow */
+}
+
+header.dark-mode {
+    background-color: #212121; /* Slightly lighter charcoal header background */
+    color: #f5f5f5;
+    border-bottom-color: #424242; /* Dark grey separator */
+}
+
+header.dark-mode h1 {
+    color: #bb86fc; /* Primary purple accent */
+}
+
+nav.dark-mode a {
+    color: #bb86fc; /* Primary purple accent for links */
+}
+
+nav.dark-mode a:hover {
+    color: #03dac6; /* Secondary teal accent on hover */
+}
+
+main.dark-mode section {
+    background-color: #212121; /* Slightly lighter charcoal section background */
+    color: #f5f5f5;
+    border-color: #424242; /* Dark grey border */
+}
+
+main.dark-mode section h2 {
+    color: #bb86fc; /* Primary purple accent */
+    border-bottom-color: #03dac6; /* Secondary teal accent highlight */
+}
+
+#about.dark-mode h2 {
+    color: #bb86fc; /* Primary purple accent */
+    border-bottom-color: #03dac6; /* Secondary teal accent */
+}
+
+#about.dark-mode p {
+    color: #bdbdbd; /* Secondary grey text */
+}
+
+#favorite-tech.dark-mode h2 {
+    color: #bb86fc; /* Primary purple accent */
+    border-bottom-color: #03dac6; /* Secondary teal accent */
+}
+
+.tech-card.dark-mode {
+    background-color: #333; /* Slightly darker card background */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.tech-card.dark-mode h3 {
+    color: #f5f5f5; /* Off-white text */
+}
+
+#favorite-activities.dark-mode h2 {
+    color: #bb86fc; /* Primary purple accent */
+    border-bottom-color: #03dac6; /* Secondary teal accent */
+}
+
+.activity-input.dark-mode {
+    background-color: #333; /* Slightly darker input background */
+    border-color: #424242; /* Dark grey border */
+}
+
+.activity-input.dark-mode h3,
+.activity-input.dark-mode label {
+    color: #f5f5f5; /* Off-white text */
+}
+
+.activity-input.dark-mode input[type="text"],
+.activity-input.dark-mode input[type="url"],
+.activity-input.dark-mode textarea {
+    background-color: #424242; /* Dark grey input background */
+    color: #f5f5f5; /* Off-white text */
+    border-color: #616161; /* Slightly lighter dark grey border */
+}
+
+.activity-input.dark-mode button {
+    background-color: #03dac6; /* Secondary teal accent button */
+    color: #000; /* Black text on teal */
+}
+
+.activity-input.dark-mode button:hover {
+    background-color: #018786; /* Darker teal on hover */
+}
+
+footer.dark-mode {
+    background-color: #212121; /* Slightly lighter charcoal footer background */
+    color: #f5f5f5; /* Off-white text */
+}
