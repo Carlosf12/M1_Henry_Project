@@ -83,6 +83,47 @@ main section h2 {
     margin-bottom: 1em; /* Space between paragraphs (if you add more) */
 }
 
+#favorite-tech {
+    padding: 20px;
+    text-align: center;
+}
+
+#favorite-tech h2 {
+    color: #555;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.tech-container {
+    display: flex; /* Use flexbox to arrange cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between the cards */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.tech-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 150px; /* Adjust as needed */
+    text-align: center;
+}
+
+.tech-card img {
+    max-width: 80px; /* Adjust logo size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tech-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
