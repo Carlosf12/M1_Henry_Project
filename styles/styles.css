@@ -124,6 +124,78 @@ main section h2 {
     color: #333;
 }
 
+#favorite-activities {
+    padding: 20px;
+}
+
+#favorite-activities h2 {
+    color: #555;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.activity-input {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.activity-input h3 {
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+.activity-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+}
+
+.activity-input input[type="text"],
+.activity-input input[type="url"],
+.activity-input textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    font-size: 1em;
+}
+
+.activity-input textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 80px;
+}
+
+.activity-input button {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.activity-input button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Align items to the start, allowing wrapping */
+}
+
+
 footer {
     text-align: center;
     margin-top: 30px;
