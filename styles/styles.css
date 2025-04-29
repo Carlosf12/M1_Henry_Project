@@ -64,6 +64,25 @@ main section h2 {
     padding-bottom: 5px;
 }
 
+#about {
+    padding: 20px; /* Add some padding around the content */
+    text-align: center; /* Center the text within the section */
+}
+
+#about h2 {
+    color: #555; /* Slightly softer heading color */
+    border-bottom: 2px dashed #ccc; /* Change the heading underline style */
+    padding-bottom: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+#about p {
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    line-height: 1.7; /* Improve line height for longer paragraphs */
+    color: #444; /* Softer text color */
+    margin-bottom: 1em; /* Space between paragraphs (if you add more) */
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
