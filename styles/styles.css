@@ -108,20 +108,41 @@ main section h2 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 150px; /* Adjust as needed */
+    width: 120px; /* Adjust width */
     text-align: center;
+    display: flex; /* Enable flexbox for vertical centering */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.tech-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
 
 .tech-card img {
-    max-width: 80px; /* Adjust logo size as needed */
+    max-width: 60px; /* Adjust logo size */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Adjust spacing */
 }
 
 .tech-card h3 {
     margin-top: 0;
-    font-size: 1.2em;
+    font-size: 1em; /* Adjust font size */
     color: #333;
+}
+
+/* Example for responsiveness (adjust breakpoints as needed) */
+@media (max-width: 768px) {
+    .tech-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Example using grid for smaller screens */
+        display: grid;
+    }
+    .tech-card {
+        width: auto; /* Allow cards to take full width in grid */
+    }
 }
 
 #favorite-activities {
