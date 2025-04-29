@@ -197,10 +197,15 @@ main section h2 {
 
 
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #eee;
+    background-color: #333; /* Dark background, similar to the header */
+    color: #fff; /* White text */
+    text-align: center; /* Center the content */
+    padding: 1em 0; /* Vertical padding */
+    margin-top: 40px; /* Add some space above the footer */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners to match main */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margin */
 }
