@@ -287,7 +287,7 @@ main.dark-mode section h2 {
 }
 
 .tech-card.dark-mode {
-    background-color: #333; /* Slightly darker card background */
+    background-color: #bb86fc; /* Slightly darker card background */
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
 }
 
