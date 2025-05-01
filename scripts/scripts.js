@@ -33,5 +33,14 @@ function createActivityCard(activity) {
     imageElement.src = imgUrl;
     imageElement.alt = title;
 
+    card.classList.add('activity-card');
+    titleElement.classList.add('activity-title');
+    descriptionElement.classList.add('activity-description');
+    imageElement.classList.add('activity-image');
 
+    card.appendChild(titleElement);
+    card.appendChild(imageElement);
+    card.appendChild(descriptionElement);
+
+    return card;
 }
