@@ -1,4 +1,13 @@
-class Repository{
+class Activity {
+    constructor(id, title, description, imgUrl) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.imgUrl = imgUrl;
+    }
+}
+
+class Repository {
     constructor() {
         this.activities = [];
         this.nextId = 1;
@@ -21,7 +30,7 @@ class Repository{
 }
 
 function createActivityCard(activity) {
-    const {id, title, description, imgUrl} = activity;
+    const { id, title, description, imgUrl } = activity;
 
     const card = document.createElement('div');
     const titleElement = document.createElement('h3');
