@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize activityRepository within the DOMContentLoaded listener
     activityRepository = new Repository(); // Removed 'const' here
 
-    activityRepository.createActivity("Hiking in the Mountains", "Enjoying breathtaking views and fresh air.", "images/hiking.jpg");
-    activityRepository.createActivity("Reading a Good Book", "Relaxing with a captivating story.", "images/reading.jpg");
-    activityRepository.createActivity("Playing Guitar", "Expressing myself through music.", "images/guitar.jpg");
+    activityRepository.createActivity("Hiking in the Mountains", "Enjoying breathtaking views and fresh air.", "images/hiking.png");
+    activityRepository.createActivity("Reading a Good Book", "Relaxing with a captivating story.", "images/book.png");
+    activityRepository.createActivity("Playing Guitar", "Expressing myself through music.", "images/guitar.png");
 
     renderActivities(activityRepository, '.activities-container');
 
