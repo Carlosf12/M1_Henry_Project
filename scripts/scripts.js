@@ -33,23 +33,31 @@ function createActivityCard(activity) {
     const { id, title, description, imgUrl } = activity;
 
     const card = document.createElement('div');
-    const titleElement = document.createElement('h3');
-    const descriptionElement = document.createElement('p');
-    const imageElement = document.createElement('img');
+    card.classList.add('activity-card');
+    card.dataset.activityId = id; 
 
+    const titleElement = document.createElement('h3');
+    titleElement.classList.add('activity-title');
     titleElement.innerHTML = title;
-    descriptionElement.innerHTML = description;
+
+    const imageElement = document.createElement('img');
+    imageElement.classList.add('activity-image');
     imageElement.src = imgUrl;
     imageElement.alt = title;
 
-    card.classList.add('activity-card');
-    titleElement.classList.add('activity-title');
+    const descriptionElement = document.createElement('p');
     descriptionElement.classList.add('activity-description');
-    imageElement.classList.add('activity-image');
+    descriptionElement.innerHTML = description;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.classList.add('delete-activity-btn');
+    deleteButton.textContent = 'Delete';
+    deleteButton.addEventListener('click', handleDeleteActivity); 
 
     card.appendChild(titleElement);
     card.appendChild(imageElement);
     card.appendChild(descriptionElement);
+    card.appendChild(deleteButton); 
 
     return card;
 }

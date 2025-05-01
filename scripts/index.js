@@ -1,5 +1,25 @@
+let activityRepository; // Declare activityRepository in the global scope
+
+function handleDeleteActivity(event) {
+    const deleteButton = event.target;
+    const activityCard = deleteButton.closest('.activity-card');
+
+    if (activityCard) {
+        const activityIdToDelete = parseInt(activityCard.dataset.activityId);
+
+        // Call the Repository's deleteActivity method using the globally available instance
+        if (activityRepository) {
+            activityRepository.deleteActivity(activityIdToDelete);
+            renderActivities(activityRepository, '.activities-container');
+        } else {
+            console.error("activityRepository is not initialized.");
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    const activityRepository = new Repository();
+    // Initialize activityRepository within the DOMContentLoaded listener
+    activityRepository = new Repository(); // Removed 'const' here
 
     activityRepository.createActivity("Hiking in the Mountains", "Enjoying breathtaking views and fresh air.", "images/hiking.jpg");
     activityRepository.createActivity("Reading a Good Book", "Relaxing with a captivating story.", "images/reading.jpg");
@@ -15,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleAddActivity() {
-        
         const titleInput = document.getElementById('activity-title');
         const descriptionInput = document.getElementById('activity-description');
         const imgUrlInput = document.getElementById('activity-image-url');
@@ -39,8 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         imgUrlInput.value = '';
     }
 });
-
-
 
 function renderActivities(repositoryInstance, containerSelector) {
     const activitiesContainer = document.querySelector(containerSelector);
